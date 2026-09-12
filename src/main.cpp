@@ -1,7 +1,8 @@
 #include<iostream>
+#include "greeting.hpp"
 using namespace std;
 int main()
 {
-    cout<<"Hello Git Project 111"<<endl;
+    printGreeting();
     return 0;
 }
