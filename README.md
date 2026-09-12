@@ -10,3 +10,7 @@ Git Learning
 -'include/'：存放头文件
 
 -'build/'：存放编译结果，不提交到 Git
+
+## 当前进度
+
+已完成 Git 基础学习
