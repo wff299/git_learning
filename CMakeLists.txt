@@ -19,6 +19,10 @@ add_executable(thread_demo
     src/thread_demo.cpp
 )
 
+add_executable(gdb_demo
+    src/gdb_demo.cpp
+)
+
 add_executable(git_learning 
     src/main.cpp
 )
@@ -78,3 +82,9 @@ target_link_libraries(thread_demo
     PRIVATE
     project_warnings
 )
+
+target_link_libraries(gdb_demo
+    PRIVATE
+    project_warnings
+)
+
