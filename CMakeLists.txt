@@ -15,6 +15,14 @@ add_library(greeting STATIC
     src/greeting.cpp
 )
 
+add_executable(bounds_demo
+    src/bounds_demo.cpp
+)
+
+add_executable(memory_demo
+    src/memory_demo.cpp
+)
+
 add_executable(thread_demo
     src/thread_demo.cpp
 )
@@ -83,8 +91,19 @@ target_link_libraries(thread_demo
     project_warnings
 )
 
+target_link_libraries(bounds_demo
+    PRIVATE
+    project_warnings
+)
+
 target_link_libraries(gdb_demo
     PRIVATE
     project_warnings
 )
+
+target_link_libraries(memory_demo
+    PRIVATE
+    project_warnings
+)
+
 
