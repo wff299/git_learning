@@ -19,6 +19,10 @@ add_executable(bounds_demo
     src/bounds_demo.cpp
 )
 
+add_executable(core_demo
+    src/core_demo.cpp
+)
+
 add_executable(deadlock_demo
     src/deadlock_demo.cpp
 )
@@ -102,6 +106,11 @@ target_link_libraries(deadlock_demo
 )
 
 target_link_libraries(bounds_demo
+    PRIVATE
+    project_warnings
+)
+
+target_link_libraries(core_demo
     PRIVATE
     project_warnings
 )
